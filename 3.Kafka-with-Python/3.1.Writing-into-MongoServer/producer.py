@@ -9,3 +9,5 @@ for e in range(1000):
     data = {'number' : e}
     producer.send('numtest', value=data)
     sleep(5)
+
+producer.close()
